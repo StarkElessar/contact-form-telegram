@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <div class="wrapper animation-gradient">
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo">
+          FormToTelegram
+        </div>
+      </div>
+    </header>
+
+    <main class="page__main main">
+      <div class="main__container">
+        <form class="main__form form" id="telegramForm">
+          <div class="form__header">
+            <div class="form__header-line"></div>
+            <h3 class="form__title">Связаться со мной</h3>
+            <div class="form__header-line"></div>
+          </div>
+          <div class="form__inputs">
+            <input 
+              class="form__input" 
+              type="text" 
+              name="user_name" 
+              id="user-name-input" 
+              placeholder="Введите Ваше имя.."
+              autocomplete="off"
+              required
+            >
+            <input 
+              class="form__input" 
+              type="email" 
+              name="user_email" 
+              id="user-email-input" 
+              placeholder="Введите Ваш e-mail.."
+              autocomplete="off"
+              required
+            >
+            <input 
+              class="form__input" 
+              type="tel"
+              name="user_phone" 
+              id="user-phone-input" 
+              placeholder="Введите Ваш телефон.."
+              autocomplete="off"
+              required
+            >
+            <textarea 
+              class="form__input form__message" 
+              name="user_text" 
+              id="user-text-input" 
+              cols="30" 
+              rows="3" 
+              placeholder="Введите Ваше сообщение.."
+              autocomplete="off"
+            ></textarea>
+          </div>
+          <div class="form__buttons">
+            <button class="form__button form__submit" type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__copyright">
+          <span>StarkElessar 2022</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+  
+  <script src="js/app.js"></script>
+</body>
+</html>
