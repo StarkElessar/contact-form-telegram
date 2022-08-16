@@ -1,0 +1,86 @@
+.main {
+  // .main__container
+  &__container {
+    justify-content: center;
+  }
+  // .main__form
+  &__form {
+    margin-top: 60px;
+  }
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  border-radius: 10px;
+  background: rgba($whiteColor, 20%);
+  backdrop-filter: blur(2px);
+  box-shadow: $lightBoxShadow;
+  // .form__header
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  // .form__header-line
+  &__header-line {
+    width: 20px;
+    height: 6px;
+    background: #444;
+  }
+  // .form__title
+  &__title {
+    padding: 0 10px;
+    color: #333;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  // .form__inputs
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+  }
+  // .form__input
+  &__input {
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    &::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+    &::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+    &:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+    &:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+    &:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+    &:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+    &:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+    &:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+  }
+  // .form__message
+  &__message {
+    resize: none;
+  }
+  // .form__buttons
+  &__buttons {
+    display: flex;
+    margin-top: 20px;
+  }
+  // .form__button
+  &__button {
+    padding: 10px 0;
+    border-radius: 8px;
+    font-size: 18px;
+    color: $whiteColor;
+  }
+  // .form__submit
+  &__submit {
+    width: 100%;
+    background: $greenColor;
+    transition: $standartTrans;
+    &:hover {
+      background: darken($greenColor, 5%);
+    }
+  }
+}

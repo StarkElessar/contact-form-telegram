@@ -1,0 +1,32 @@
+.footer {
+  padding: 10px 0;
+  background: rgb(31, 31, 31);
+  box-shadow: 0 -2px 5px rgba(#000, 30%);
+  background: linear-gradient(
+    159deg,
+    rgba(31, 31, 31, 1) 0%,
+    rgba(35, 38, 38, 1) 30%,
+    rgba(27, 27, 27, 1) 60%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
+  &__container {
+    justify-content: center;
+  }
+
+  &__copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & span {
+      display: flex;
+      font-size: 14px;
+      color: #fff;
+      align-items: center;
+      & svg {
+        margin-top: -2px;
+        margin-right: 5px;
+      }
+    }
+  }
+}

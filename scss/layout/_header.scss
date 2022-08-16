@@ -1,0 +1,62 @@
+.header {
+  background: #fff;
+  padding: 10px 0;
+  border-bottom: 1px solid #f1f1f1;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: auto;
+    font-weight: 700;
+    color: $blueColor;
+    font-size: 28px;
+    transition: $standartTrans;
+    &:hover {
+      color: $blackColor;
+    }
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+  &__user {
+    color: $blueColor;
+    font-size: 18px;
+    margin-right: 20px;
+    background: transparent;
+    transition: $standartTrans;
+    &:hover {
+      color: $blackColor;
+    }
+  }
+  &__cart {
+    cursor: pointer;
+    margin: 0 20px;
+    & svg {
+      & path {
+        fill: $blueColor;
+      }
+    }
+  }
+  &__login {
+    padding: 8px 26px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: $blueColor;
+    border: 2px solid $blueColor;
+    border-radius: 50px;
+    background: transparent;
+    transition: $standartTrans;
+    &:hover {
+      background: $blueColor;
+      color: #fff;
+    }
+  }
+}
